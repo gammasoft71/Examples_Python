@@ -1,25 +1,29 @@
-#!/usr/local/bin/python3
+#!/usr/bin/env python3
 # -*-coding:utf-8 -*
 
 import tkinter
+import tkinter.messagebox
 import tkinter.ttk
 
 class Form1(tkinter.Tk):
   def __init__(self):
     super().__init__()
-    
+
     self.frame = tkinter.ttk.Frame(self)
     self.frame.pack(fill = tkinter.BOTH, expand=1)
 
-    self.label = tkinter.ttk.Label(self.frame, font=("Arial", 46, "bold italic"), foreground="green", text="Hello, World!")
-    self.label.place(x=5, y=100)
+    self.button1 = tkinter.ttk.Button(self.frame, command=self.OnClickMeClick, text="Click me")
+    self.button1.place(x=10, y=10)
 
     self.geometry("300x300+200+100")
-    self.title("My first application")
+    self.title("Hello World Form")
 
   def main():
     form = Form1()
     form.mainloop()
+
+  def OnClickMeClick(self):
+    tkinter.messagebox.showinfo(message="Hello World")
 
 if __name__ == '__main__':
   Form1.main()
