@@ -23,7 +23,7 @@ class Form1(tkinter.Tk):
     form.mainloop()
 
   def OnClickMeClick(self):
-    tkinter.messagebox.showinfo(message="Hello World")
+    tkinter.messagebox.showinfo(message="Hello World", parent=self)
 
 if __name__ == '__main__':
   Form1.main()
