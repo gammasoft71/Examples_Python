@@ -29,7 +29,7 @@ class Form1(tkinter.Tk):
     self.geometry("300x300+200+100")
     self.title("CheckBox Example")
 
-  def main():    
+  def main(self=None):    
     form = Form1()
     form.mainloop()
  

@@ -3,6 +3,10 @@
 
 import tkinter
 
+class Program:
+  def main(self=None):
+    application = tkinter.Tk()
+    application.mainloop()
+
 if __name__ == '__main__':
-  application = tkinter.Tk()
-  application.mainloop()
+  Program.main()

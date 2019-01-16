@@ -4,7 +4,7 @@
 import tkinter.messagebox
 
 class Program:
-  def main():
+  def main(self=None):
     tkinter.messagebox.showinfo("Title", "This is text message")
 
 if __name__ == '__main__':

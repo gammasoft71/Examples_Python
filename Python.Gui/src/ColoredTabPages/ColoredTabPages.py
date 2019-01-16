@@ -29,7 +29,7 @@ class Form1(tkinter.Tk):
     self.geometry("390x270+200+100")
     self.title("Colored TabPages example")
 
-  def main():
+  def main(self=None):
     form = Form1()
     form.mainloop()
 

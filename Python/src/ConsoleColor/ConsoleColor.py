@@ -7,7 +7,7 @@
 import sys
 
 class Program:
-  def main():
+  def main(self=None):
     FOREGROUND_BLUE = '\033[94m'
     FOREGROUND_YELLOW = '\033[93m'
     FOREGROUND_DARK_GRAY = '\033[90m'
