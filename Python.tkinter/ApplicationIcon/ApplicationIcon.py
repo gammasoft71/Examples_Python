@@ -7,7 +7,7 @@ import tkinter
 class Program:
   def main(self=None):
     application = tkinter.Tk()
-    application.iconbitmap('Resources/Python.ico' if os.path.isfile('Resources/Python.ico') else None)
+    application.iconbitmap(os.path.join('Resources', 'Python.ico') if os.path.isfile(os.path.join('Resources', 'Python.ico')) else None)
     application.mainloop()
 
 if __name__ == '__main__':
