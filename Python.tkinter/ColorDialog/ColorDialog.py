@@ -9,7 +9,7 @@ class Form1(tkinter.Tk):
   def __init__(self):
     super().__init__()
 
-    self.button = tkinter.ttk.Button(self, command=self.OnColorClick, text='Color...')
+    self.button = tkinter.ttk.Button(self, command=self.OnButtonClick, text='Color...')
     self.button.place(x=10, y=10)
 
     self.geometry('300x300+200+100')
@@ -19,7 +19,7 @@ class Form1(tkinter.Tk):
     form = Form1()
     form.mainloop()
 
-  def OnColorClick(self):
+  def OnButtonClick(self):
     color = tkinter.colorchooser.askcolor(color=self['background'], parent=self)
     if color[1]:
       self['background'] = color[1]

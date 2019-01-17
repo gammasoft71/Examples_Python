@@ -14,7 +14,7 @@ class Form1(tkinter.Tk):
     self.frame = tkinter.ttk.Frame(self)
     self.frame.pack(fill = tkinter.BOTH, expand=1)
 
-    self.button = tkinter.ttk.Button(self.frame, command=self.OnColorClick, text='Folder...')
+    self.button = tkinter.ttk.Button(self.frame, command=self.OnButtonClick, text='Folder...')
     self.button.place(x=10, y=10)
 
     self.label = tkinter.ttk.Label(self.frame, text='Path = ')
@@ -27,7 +27,7 @@ class Form1(tkinter.Tk):
     form = Form1()
     form.mainloop()
 
-  def OnColorClick(self):
+  def OnButtonClick(self):
     directory = tkinter.filedialog.askdirectory(initialdir=os.path.join(os.environ['HOMEPATH' if platform.system() == 'Windows' else 'HOME'], 'Desktop'))
     if directory:
       self.label['text'] = 'Path = {}'.format(directory)
