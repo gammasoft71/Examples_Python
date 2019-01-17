@@ -33,7 +33,6 @@ class Form1(tkinter.Tk):
     openFileOptions['initialdir'] = os.path.join(os.environ["HOMEPATH" if platform.system() == 'Windows' else 'HOME'], "Desktop")
     openFileOptions['parent'] = self
     fileName = tkinter.filedialog.askopenfilename(**openFileOptions)
-    print(fileName)
     if fileName:
       self.label['text'] = 'File = {}'.format(fileName)
 

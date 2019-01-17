@@ -34,7 +34,6 @@ class Form1(tkinter.Tk):
     saveFileOptions['initialfile'] = 'MyFile.txt'
     saveFileOptions['parent'] = self
     fileName = tkinter.filedialog.asksaveasfilename(**saveFileOptions)
-    print(fileName)
     if fileName:
       self.label['text'] = 'File = {}'.format(fileName)
 
