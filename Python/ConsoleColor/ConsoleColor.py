@@ -8,7 +8,7 @@ import sys
 
 class Program:
   def main(self=None):
-    logo = [
+    LOGO = [
       U'████████████████████████████████████████████████████████████',
       U'██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░░░░░░░██████',
       U'██████████████████████████████░░░░░░░░░░░░░░░░░░░░░░████░░████████',
@@ -50,8 +50,8 @@ class Program:
     FOREGROUND__RESET = '\033[39m'
 
     index = 0
-    for line in logo:
-      print('       ' if index == 0 or index == len(logo) - 1 else '     ', end='')
+    for line in LOGO:
+      print('       ' if index == 0 or index == len(LOGO) - 1 else '     ', end='')
       print(FOREGROUND_DARK_BLUE, end='')
       print(BACKGROUND_WHITE, end='')
       print(line, end='')
