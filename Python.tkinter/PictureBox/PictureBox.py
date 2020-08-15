@@ -5,6 +5,7 @@
 # pip install Pillow
 # More information :  https://pillow.readthedocs.io/en/3.0.x/index.html
 
+import os
 import tkinter
 import tkinter.font
 import tkinter.ttk
@@ -18,7 +19,7 @@ class Form1(tkinter.Tk):
     self.panel = tkinter.ttk.Frame(self)
     self.panel.pack(fill = tkinter.BOTH, expand=1)
 
-    self.image1 = PIL.ImageTk.PhotoImage(PIL.Image.open("Logo.png"))
+    self.image1 = PIL.ImageTk.PhotoImage(PIL.Image.open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Resources", "Logo.png")))
     self.pictureBox1 = tkinter.ttk.Label(self.panel, image=self.image1, borderwidth=2, relief="groove")
     self.pictureBox1.place(x=20, y=20)
 
