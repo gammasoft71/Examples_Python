@@ -18,10 +18,10 @@ class Frame1(wx.Frame):
     self.staticText.SetFont(wx.Font(PointsToNativeFontGraphicsUntit(32), wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_ITALIC, wx.FONTWEIGHT_BOLD))
     self.staticText.SetForegroundColour(wx.TheColourDatabase.Find("Forest Green"))
 
-  def main(self=None):
+  def Main(self=None):
     application = wx.App()
     Frame1().Show()
     application.MainLoop()
 
 if __name__ == '__main__':
-  Frame1.main()
+  Frame1.Main()

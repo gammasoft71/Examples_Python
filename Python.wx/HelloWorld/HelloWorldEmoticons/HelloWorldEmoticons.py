@@ -17,10 +17,10 @@ class Frame1(wx.Frame):
     self.staticText.SetFont(wx.Font(PointsToNativeFontGraphicsUntit(72), wx.FONTFAMILY_DEFAULT, wx.FONTSTYLE_NORMAL, wx.FONTWEIGHT_NORMAL))
     self.SetClientSize(self.staticText.GetSize());
 
-  def main(self=None):
+  def Main(self=None):
     application = wx.App()
     Frame1().Show()
     application.MainLoop()
 
 if __name__ == '__main__':
-  Frame1.main()
+  Frame1.Main()
