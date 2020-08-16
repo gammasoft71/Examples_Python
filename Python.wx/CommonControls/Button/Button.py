@@ -5,7 +5,7 @@ import wx
 
 class Frame1(wx.Frame):
   def __init__(self, parent=None):
-    super().__init__(parent, wx.ID_ANY, 'Static text example', wx.DefaultPosition, wx.Size(300, 300))
+    super().__init__(parent, wx.ID_ANY, 'Button example', wx.DefaultPosition, wx.Size(300, 300))
     self.button1Clicked = 0
     self.button2Clicked = 0
     self.panel = wx.Panel(self)
