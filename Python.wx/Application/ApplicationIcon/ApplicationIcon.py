@@ -5,7 +5,7 @@ import os
 import wx
 
 class Program:
-  def Main(self=None):
+  def Main():
     application = wx.App()
     frame = wx.Frame(None)
     frame.SetIcon(wx.Icon(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Resources", "Gammasoft.ico")))

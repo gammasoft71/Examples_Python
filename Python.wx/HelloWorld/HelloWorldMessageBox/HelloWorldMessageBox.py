@@ -15,7 +15,7 @@ class Frame1(wx.Frame):
   def OnButtonClick(self, event):
     wx.MessageDialog(None, "Hello, World!").ShowModal()
 
-  def Main(self=None):
+  def Main():
     application = wx.App()
     Frame1().Show()
     application.MainLoop()

@@ -19,7 +19,7 @@ class Frame1(wx.Frame):
       self.lastIdleTime = time.time_ns()
     event.RequestMore()
 
-  def Main(self=None):
+  def Main():
     application = wx.App()
     Frame1().Show()
     application.MainLoop()

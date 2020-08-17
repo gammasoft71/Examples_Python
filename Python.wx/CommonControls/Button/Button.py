@@ -24,7 +24,7 @@ class Frame1(wx.Frame):
     self.button2Clicked = self.button2Clicked + 1
     self.staticText2.SetLabel('button2 clicked {0} times'.format(self.button2Clicked))
         
-  def Main(self=None):
+  def Main(s):
     application = wx.App()
     Frame1().Show()
     application.MainLoop()

@@ -4,7 +4,7 @@
 import wx
 
 class Program:
-  def Main(self=None):
+  def Main():
     application = wx.App()
     wx.Frame(None).Show()
     application.MainLoop()
