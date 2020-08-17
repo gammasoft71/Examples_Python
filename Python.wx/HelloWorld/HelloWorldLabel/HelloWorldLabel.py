@@ -9,8 +9,8 @@ def PointsToNativeFontGraphicsUntit(size):
   return size if platform.system() != 'Darwin' else float(size) / wx.ScreenDC().GetPPI().GetHeight() * 96.0
 
 class Frame1(wx.Frame):
-  def __init__(self, parent=None):
-    super().__init__(parent)
+  def __init__(self):
+    super().__init__(None)
     self.SetClientSize(300, 300);
     self.SetLabel('Hello world! (static text)')
     self.panel = wx.Panel(self, wx.ID_ANY)

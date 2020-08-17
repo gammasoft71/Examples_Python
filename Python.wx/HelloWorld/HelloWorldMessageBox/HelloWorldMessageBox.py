@@ -4,8 +4,8 @@
 import wx
 
 class Frame1(wx.Frame):
-  def __init__(self, parent=None):
-    super().__init__(parent)
+  def __init__(self):
+    super().__init__(None)
     self.SetClientSize(300, 300);
     self.SetLabel('Hello world! (message dialog)')
     self.panel = wx.Panel(self, wx.ID_ANY)

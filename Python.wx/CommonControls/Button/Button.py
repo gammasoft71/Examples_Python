@@ -4,8 +4,8 @@
 import wx
 
 class Frame1(wx.Frame):
-  def __init__(self, parent=None):
-    super().__init__(parent, wx.ID_ANY, 'Button example', wx.DefaultPosition, wx.Size(300, 300))
+  def __init__(self):
+    super().__init__(None, wx.ID_ANY, 'Button example', wx.DefaultPosition, wx.Size(300, 300))
     self.button1Clicked = 0
     self.button2Clicked = 0
     self.panel = wx.Panel(self)
@@ -26,7 +26,7 @@ class Frame1(wx.Frame):
         
   def Main(self=None):
     application = wx.App()
-    Frame1(None).Show()
+    Frame1().Show()
     application.MainLoop()
 
 if __name__ == '__main__':
