@@ -3,6 +3,12 @@
 
 import wx
 
-application = wx.App()
-wx.Frame(None).Show()
-application.MainLoop()
+class Program:
+  def Main():
+    application = wx.App()
+    wx.Frame(None).Show()
+    application.MainLoop()
+
+if __name__ == '__main__':
+  Program.Main()
+s

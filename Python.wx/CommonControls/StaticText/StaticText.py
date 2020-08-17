@@ -9,10 +9,6 @@ class Frame1(wx.Frame):
     self.panel = wx.Panel(self)
     self.staticText1 = wx.StaticText(self.panel, wx.ID_ANY, 'staticText1', wx.Point(10, 10))
     
-  def Main():
-    application = wx.App()
-    Frame1().Show()
-    application.MainLoop()
-
-if __name__ == '__main__':
-  Frame1.Main()
+application = wx.App()
+Frame1().Show()
+application.MainLoop()

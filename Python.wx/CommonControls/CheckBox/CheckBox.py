@@ -30,10 +30,6 @@ class Frame1(wx.Frame):
     if state == wx.CHK_CHECKED: return "Checked"
     return "Indeterminate"
   
-  def Main():
-    application = wx.App()
-    Frame1().Show()
-    application.MainLoop()
-
-if __name__ == '__main__':
-  Frame1.Main()
+application = wx.App()
+Frame1().Show()
+application.MainLoop()

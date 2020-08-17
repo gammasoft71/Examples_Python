@@ -4,5 +4,4 @@
 import wx
 
 application = wx.App()
-wx.Frame(None).Show()
-application.MainLoop()
+wx.MessageDialog(None, "Hello, World!").ShowModal()

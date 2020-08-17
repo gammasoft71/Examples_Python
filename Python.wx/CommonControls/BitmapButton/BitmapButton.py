@@ -26,10 +26,6 @@ class Frame1(wx.Frame):
     self.button4.SetBitmapLabel(wx.Bitmap(wx.Image(os.path.join(os.path.dirname(os.path.abspath(__file__)), "Resources", "gammasoft_64x64.xpm"))));
     self.button4.SetSize(70, 70);
         
-  def Main():
-    application = wx.App()
-    Frame1().Show()
-    application.MainLoop()
-
-if __name__ == '__main__':
-  Frame1.Main()
+application = wx.App()
+Frame1().Show()
+application.MainLoop()
