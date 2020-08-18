@@ -17,11 +17,11 @@ class Frame1(wx.Frame):
     self.staticText2 = wx.StaticText(self.panel, wx.ID_ANY, 'button2 clicked 0 times', wx.Point(50, 230))
     
   def OnButton1Click(self, event):
-    self.button1Clicked = self.button1Clicked + 1
+    self.button1Clicked += 1
     self.staticText1.SetLabel('button1 clicked {0} times'.format(self.button1Clicked))
     
   def OnButton2Click(self, event):
-    self.button2Clicked = self.button2Clicked + 1
+    self.button2Clicked += 1
     self.staticText2.SetLabel('button2 clicked {0} times'.format(self.button2Clicked))
         
 application = wx.App()
