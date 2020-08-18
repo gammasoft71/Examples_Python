@@ -1,6 +1,6 @@
 # Examples
 
-[This folder](.) shows hows how to use tkinter only by programming code.
+[This folder](.) shows hows how to use tkinter and wxPython only by programming code.
 
 ## Other
 
