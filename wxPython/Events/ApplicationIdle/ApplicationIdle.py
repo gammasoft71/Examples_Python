@@ -12,7 +12,7 @@ class Frame1(wx.Frame):
     wx.App.Get().Bind(wx.EVT_IDLE, self.OnApplicationIdle)
 
   def OnApplicationIdle(self, event):
-    elapsedTime = time.time_ns() - self.lastIdleTime;
+    elapsedTime = time.time_ns() - self.lastIdleTime
     if elapsedTime >= 100000000: # 100 ms
       self.counter += 1
       self.SetLabel("{0}".format(self.counter))
